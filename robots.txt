@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://raghav938.github.io/shriram-chemicals/sitemap.xml
+Sitemap: https://shriramchemical.in/sitemap.xml
