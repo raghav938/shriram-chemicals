@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#0b132b"/>
+  <rect x="50" y="50" width="500" height="500" rx="20" fill="#1c2541" stroke="#3b82f6" stroke-width="4"/>
+  <text x="300" y="180" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#38bdf8" text-anchor="middle">SHRI RAM CHEMICALS</text>
+  <text x="300" y="240" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">CALCIUM WIRE</text>
+  <text x="300" y="285" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">DRAWING POWDER</text>
+  <rect x="180" y="320" width="240" height="45" rx="8" fill="#3b82f6"/>
+  <text x="300" y="352" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">GRADE: SRC-CAL 50</text>
+  <text x="300" y="420" font-family="Arial, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Standard: 50 KG HDPE Bag</text>
+  <text x="300" y="455" font-family="Arial, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Sahibabad, Ghaziabad</text>
+  <text x="300" y="500" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#4ade80" text-anchor="middle">Factory Direct: ?58 / KG</text>
+</svg>

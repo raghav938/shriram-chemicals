@@ -26,10 +26,17 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Comprehensive Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
+        <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://raghav938.github.io/shriram-chemicals/#website",
+          "url": "https://raghav938.github.io/shriram-chemicals/",
+          "name": "Shri Ram Chemicals",
+          "description": "Manufacturer of Industrial Wire Drawing Powders, Pastes, and CU-56 Copper Drawing Oil in India."
+        },
         {
           "@type": "Organization",
           "@id": "https://raghav938.github.io/shriram-chemicals/#organization",
@@ -57,59 +64,41 @@
           }
         },
         {
-          "@type": "Product",
-          "name": "Calcium Based Wire Drawing Powder (SRC-CAL 50)",
-          "description": "High-performance calcium stearate dry lubricant powder for low and medium carbon steel, MS wire, and binding wire cold drawing. Packaged in 50 KG HDPE bags.",
-          "brand": { "@id": "https://raghav938.github.io/shriram-chemicals/#organization" },
-          "offers": {
-            "@type": "Offer",
-            "price": "58.00",
-            "priceCurrency": "INR",
-            "unitCode": "KGM",
-            "availability": "https://schema.org/InStock",
-            "eligibleQuantity": {
-              "@type": "QuantitativeValue",
-              "value": "500",
-              "unitCode": "KGM"
+          "@type": "ItemList",
+          "name": "Wire Drawing Lubricants, Powders & Pastes Catalog",
+          "description": "Complete product catalog of industrial dry powders, copper drawing oils, and wet pastes manufactured by Shri Ram Chemicals.",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Calcium Based Wire Drawing Powder (SRC-CAL 50)",
+              "url": "https://raghav938.github.io/shriram-chemicals/products/calcium-wire-drawing-powder.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "CU-56 Copper Wire Drawing Oil",
+              "url": "https://raghav938.github.io/shriram-chemicals/products/cu-56-copper-wire-drawing-oil.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Sodium Based Wire Drawing Powder (SRC-SOD 90)",
+              "url": "https://raghav938.github.io/shriram-chemicals/#spec-matrix"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "D-85 Black Wire Drawing Lubricant Powder",
+              "url": "https://raghav938.github.io/shriram-chemicals/#spec-matrix"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Wet Wire Drawing Paste",
+              "url": "https://raghav938.github.io/shriram-chemicals/#spec-matrix"
             }
-          }
-        },
-        {
-          "@type": "Product",
-          "name": "Sodium Based Wire Drawing Powder (SRC-SOD 90)",
-          "description": "Premium water-soluble sodium stearate granules with high TFM for high-speed drawing of galvanized wire, high carbon, and bright finish wires. Packaged in 50 KG HDPE bags.",
-          "brand": { "@id": "https://raghav938.github.io/shriram-chemicals/#organization" },
-          "offers": {
-            "@type": "Offer",
-            "price": "160.00",
-            "priceCurrency": "INR",
-            "unitCode": "KGM",
-            "availability": "https://schema.org/InStock"
-          }
-        },
-        {
-          "@type": "Product",
-          "name": "CU-56 Copper Wire Drawing Oil",
-          "description": "Specialized heavy-duty emulsion and synthetic wire drawing oil designed for high-speed multi-die rod breakdown and intermediate copper wire drawing. Packaged in 200 KG steel drums.",
-          "brand": { "@id": "https://raghav938.github.io/shriram-chemicals/#organization" },
-          "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock"
-          }
-        },
-        {
-          "@type": "Product",
-          "name": "Wet Wire Drawing Paste",
-          "description": "Specially formulated water-dispersible paste for fine steel wire and galvanized wire drawing on wet benches. Packaged in 200 KG drums.",
-          "brand": { "@id": "https://raghav938.github.io/shriram-chemicals/#organization" },
-          "offers": {
-            "@type": "Offer",
-            "price": "80.00",
-            "priceCurrency": "INR",
-            "unitCode": "LTR",
-            "availability": "https://schema.org/InStock"
-          }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -119,7 +108,7 @@
               "name": "What is the key difference between calcium-based and sodium-based wire drawing powders?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Calcium-based powders (e.g. SRC-CAL 50 at ₹58/kg) are insoluble, heavy-pressure lubricants that form a thick boundary film, making them ideal for breakdown passes, mechanically descaled mild steel, and binding wire. Sodium-based powders (e.g. SRC-SOD 90 at ₹160/kg) are water-soluble, burn clean during annealing, and are preferred for high-speed draws and wire requiring subsequent plating, galvanizing, or bright finishes."
+                "text": "Calcium-based powders (e.g. SRC-CAL 50 at ?58/kg) are insoluble, heavy-pressure lubricants that form a thick boundary film, making them ideal for breakdown passes, mechanically descaled mild steel, and binding wire. Sodium-based powders (e.g. SRC-SOD 90 at ?160/kg) are water-soluble, burn clean during annealing, and are preferred for high-speed draws and wire requiring subsequent plating, galvanizing, or bright finishes."
               }
             },
             {
@@ -135,7 +124,7 @@
               "name": "Can wire mills request a trial sample before placing bulk orders?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Shri Ram Chemicals dispatches 1–2 KG pilot trial samples within 24 hours for machine trials. Inquiries can be placed directly via WhatsApp at +91-9999818908."
+                "text": "Yes. Shri Ram Chemicals dispatches 1?2 KG pilot trial samples within 24 hours for machine trials. Inquiries can be placed directly via WhatsApp at +91-9999818908."
               }
             },
             {
