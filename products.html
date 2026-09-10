@@ -139,33 +139,211 @@
 </header>
 
 <main>
-    <!-- Top Showcase Header with Bags and Landing Photo at the Start -->
+    <!-- WIRE TYPE SELECTOR: 4 SIDE-BY-SIDE OPTIONS AT THE START -->
+    <section id="wire-selection" class="py-8 sm:py-12 bg-surface-container-lowest border-b border-outline-variant">
+        <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop">
+            <div class="max-w-3xl mb-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-50 border border-blue-200 text-blue-900 text-xs font-bold uppercase tracking-wider font-label-sm mb-3">
+                    <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+                    Select Your Wire Substrate &bull; Direct Product Matching
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">
+                    Which Type of Wire Do You Draw?
+                </h1>
+                <p class="text-sm sm:text-base text-on-surface-variant mt-2 leading-relaxed">
+                    Select your wire material below to instantly jump to engineered lubricant grades, operational specifications, and factory trial requests.
+                </p>
+            </div>
+
+            <!-- 4 SIDE-BY-SIDE OPTIONS GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                
+                <!-- OPTION 1: LOW CARBON WIRE -->
+                <div class="bg-surface rounded-lg border-2 border-blue-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300 p-5 flex flex-col justify-between relative overflow-hidden bg-gradient-to-b from-blue-50/50 to-surface group">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-label-sm font-bold uppercase px-2.5 py-0.5 rounded-bl">
+                        High Volume MS
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
+                        </div>
+                        <span class="text-[11px] font-label-sm font-bold text-blue-700 uppercase tracking-wider">Wire Type 01</span>
+                        <h2 class="text-lg sm:text-xl font-bold text-primary group-hover:text-blue-700 mt-1 mb-2 transition-colors">
+                            Low Carbon Wire
+                        </h2>
+                        <div class="text-xs font-semibold text-secondary mb-2">
+                            MS &bull; Binding Wire &bull; Nail Wire &bull; GI Wire
+                        </div>
+                        <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                            Continuous drafting from 5.0mm rod down to 2.0mm and below. Superior die-box cooling and tungsten carbide die wear protection.
+                        </p>
+                        <div class="bg-surface-container-low p-2.5 rounded border border-outline-variant mb-4">
+                            <div class="text-[10px] uppercase font-bold text-secondary font-label-sm">Recommended Grades:</div>
+                            <div class="text-xs font-bold text-primary mt-0.5">D-45 &bull; P-75 &bull; PKL &bull; 85 Black</div>
+                        </div>
+                    </div>
+                    <div class="space-y-2 pt-3 border-t border-outline-variant/60">
+                        <a href="#cat-low-carbon" class="w-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold uppercase tracking-wider py-2.5 px-3 rounded flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+                            <span>View Low Carbon Lubricants</span>
+                            <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                        </a>
+                        <a href="products/calcium-wire-drawing-powder.html" class="w-full bg-surface-container-high hover:bg-surface-container-highest text-primary text-xs font-bold uppercase tracking-wider py-2 px-3 rounded flex items-center justify-center gap-1 transition-colors border border-outline-variant text-[11px]">
+                            <span>Technical Specs Page</span>
+                            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- OPTION 2: HIGH CARBON WIRE -->
+                <div class="bg-surface rounded-lg border-2 border-purple-200 hover:border-purple-600 hover:shadow-lg transition-all duration-300 p-5 flex flex-col justify-between relative overflow-hidden bg-gradient-to-b from-purple-50/50 to-surface group">
+                    <div class="absolute top-0 right-0 bg-purple-600 text-white text-[10px] font-label-sm font-bold uppercase px-2.5 py-0.5 rounded-bl">
+                        High Tensile
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">speed</span>
+                        </div>
+                        <span class="text-[11px] font-label-sm font-bold text-purple-700 uppercase tracking-wider">Wire Type 02</span>
+                        <h2 class="text-lg sm:text-xl font-bold text-primary group-hover:text-purple-700 mt-1 mb-2 transition-colors">
+                            High Carbon Wire
+                        </h2>
+                        <div class="text-xs font-semibold text-secondary mb-2">
+                            Spring Steel &bull; Tyre Bead &bull; Rope Wire
+                        </div>
+                        <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                            High-temperature drawing requiring high-purity sodium stearates. Endures severe frictional heat up to 240°C+ without charring.
+                        </p>
+                        <div class="bg-surface-container-low p-2.5 rounded border border-outline-variant mb-4">
+                            <div class="text-[10px] uppercase font-bold text-secondary font-label-sm">Recommended Grades:</div>
+                            <div class="text-xs font-bold text-primary mt-0.5">HC-1000 &bull; HC-2000 &bull; S-90</div>
+                        </div>
+                    </div>
+                    <div class="space-y-2 pt-3 border-t border-outline-variant/60">
+                        <a href="#cat-high-carbon" class="w-full bg-purple-700 hover:bg-purple-800 text-white text-xs font-bold uppercase tracking-wider py-2.5 px-3 rounded flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+                            <span>View High Carbon Lubricants</span>
+                            <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                        </a>
+                        <a href="products/specialty-drawing-compounds.html" class="w-full bg-surface-container-high hover:bg-surface-container-highest text-primary text-xs font-bold uppercase tracking-wider py-2 px-3 rounded flex items-center justify-center gap-1 transition-colors border border-outline-variant text-[11px]">
+                            <span>Technical Specs Page</span>
+                            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- OPTION 3: STAINLESS STEEL WIRE -->
+                <div class="bg-surface rounded-lg border-2 border-sky-200 hover:border-sky-600 hover:shadow-lg transition-all duration-300 p-5 flex flex-col justify-between relative overflow-hidden bg-gradient-to-b from-sky-50/50 to-surface group">
+                    <div class="absolute top-0 right-0 bg-sky-700 text-white text-[10px] font-label-sm font-bold uppercase px-2.5 py-0.5 rounded-bl">
+                        Anti-Galling
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">shield</span>
+                        </div>
+                        <span class="text-[11px] font-label-sm font-bold text-sky-700 uppercase tracking-wider">Wire Type 03</span>
+                        <h2 class="text-lg sm:text-xl font-bold text-primary group-hover:text-sky-700 mt-1 mb-2 transition-colors">
+                            Stainless Steel Wire
+                        </h2>
+                        <div class="text-xs font-semibold text-secondary mb-2">
+                            SS 304 &bull; SS 316 &bull; SS 202 &bull; Alloy Wires
+                        </div>
+                        <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                            Heavy EP barrier compounds preventing rapid work-hardening, galling, surface scratching, and metal pickup on carbide &amp; PCD dies.
+                        </p>
+                        <div class="bg-surface-container-low p-2.5 rounded border border-outline-variant mb-4">
+                            <div class="text-[10px] uppercase font-bold text-secondary font-label-sm">Recommended Grades:</div>
+                            <div class="text-xs font-bold text-primary mt-0.5">SS-1000 &bull; Wet Drawing Fluid</div>
+                        </div>
+                    </div>
+                    <div class="space-y-2 pt-3 border-t border-outline-variant/60">
+                        <a href="#cat-stainless" class="w-full bg-sky-700 hover:bg-sky-800 text-white text-xs font-bold uppercase tracking-wider py-2.5 px-3 rounded flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+                            <span>View Stainless Lubricants</span>
+                            <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                        </a>
+                        <a href="products/specialty-drawing-compounds.html" class="w-full bg-surface-container-high hover:bg-surface-container-highest text-primary text-xs font-bold uppercase tracking-wider py-2 px-3 rounded flex items-center justify-center gap-1 transition-colors border border-outline-variant text-[11px]">
+                            <span>Technical Specs Page</span>
+                            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- OPTION 4: COPPER WIRE -->
+                <div class="bg-surface rounded-lg border-2 border-orange-200 hover:border-orange-600 hover:shadow-lg transition-all duration-300 p-5 flex flex-col justify-between relative overflow-hidden bg-gradient-to-b from-orange-50/50 to-surface group">
+                    <div class="absolute top-0 right-0 bg-orange-600 text-white text-[10px] font-label-sm font-bold uppercase px-2.5 py-0.5 rounded-bl">
+                        Clean Anneal
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">cable</span>
+                        </div>
+                        <span class="text-[11px] font-label-sm font-bold text-orange-700 uppercase tracking-wider">Wire Type 04</span>
+                        <h2 class="text-lg sm:text-xl font-bold text-primary group-hover:text-orange-700 mt-1 mb-2 transition-colors">
+                            Copper Wire
+                        </h2>
+                        <div class="text-xs font-semibold text-secondary mb-2">
+                            ETP Copper Rod &bull; Intermediate &bull; Fine Wire
+                        </div>
+                        <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                            Specialty neat oils &amp; dry powders for electrolytic copper rod breakdown (8mm down to 1.2mm). Non-staining and clean-burn annealing.
+                        </p>
+                        <div class="bg-surface-container-low p-2.5 rounded border border-outline-variant mb-4">
+                            <div class="text-[10px] uppercase font-bold text-secondary font-label-sm">Recommended Grades:</div>
+                            <div class="text-xs font-bold text-primary mt-0.5">CU-56 Copper Oil &bull; CL/1A</div>
+                        </div>
+                    </div>
+                    <div class="space-y-2 pt-3 border-t border-outline-variant/60">
+                        <a href="#cat-copper" class="w-full bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold uppercase tracking-wider py-2.5 px-3 rounded flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+                            <span>View Copper Lubricants</span>
+                            <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                        </a>
+                        <a href="products/drawing-oils.html" class="w-full bg-surface-container-high hover:bg-surface-container-highest text-primary text-xs font-bold uppercase tracking-wider py-2 px-3 rounded flex items-center justify-center gap-1 transition-colors border border-outline-variant text-[11px]">
+                            <span>Technical Specs Page</span>
+                            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Showcase Header with Bags and Calcium Powder Photo -->
     <section class="py-12 bg-surface-container-low border-b border-outline-variant">
         <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop">
             <span class="text-xs font-label-sm font-bold text-secondary uppercase tracking-widest">Industrial Manufacturing Catalog</span>
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-primary mb-3">7 DISTINCT WIRE DRAWING PRODUCT CATEGORIES</h1>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-primary mb-3">7 DISTINCT WIRE DRAWING PRODUCT CATEGORIES</h2>
             <p class="text-base text-on-surface-variant max-w-3xl mb-8 leading-relaxed">
-                Manufactured at Ghaziabad. Low Carbon, Fine Wire, High Speed, Wet Paste, High Carbon, Stainless Steel, and Copper wire drawing lubricants.
+                Direct factory manufacturing at Sahibabad / Ghaziabad. Low Carbon, Fine Wire, High Speed, Wet Paste, High Carbon, Stainless Steel, and Copper wire drawing lubricants.
             </p>
 
-            <!-- BAGS AND LANDING PAGE PHOTO AT THE START -->
+            <!-- BAGS AND CALCIUM POWDER PHOTO AT THE START -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-surface rounded border border-outline-variant overflow-hidden shadow-sm">
-                    <div class="h-60 overflow-hidden bg-surface-container-highest">
-                        <img src="images/LANDING 1.jpg" alt="Manufacturing Plant in Ghaziabad" class="w-full h-full object-cover">
+                <!-- Photo 1: Calcium Wire Drawing Powder -->
+                <div class="bg-surface rounded border border-outline-variant overflow-hidden shadow-sm group">
+                    <div class="h-60 overflow-hidden bg-surface-container-highest relative">
+                        <img src="images/D-45.jpg" alt="Calcium Wire Drawing Powder manufactured by Shri Ram Chemicals Ghaziabad" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-2 left-2 bg-black/75 backdrop-blur-sm text-white px-2.5 py-1 rounded text-[11px] font-label-sm font-semibold">
+                            Calcium Drawing Powder &bull; Grade D-45
+                        </div>
                     </div>
-                    <div class="p-3.5">
-                        <div class="text-xs font-label-sm font-bold text-secondary">MANUFACTURING PLANT</div>
-                        <h3 class="text-sm font-bold text-primary">Over 30 Years of Heavy Industrial Lubricant Manufacturing</h3>
+                    <div class="p-4 bg-surface-container-lowest">
+                        <div class="text-xs font-bold text-secondary font-label-sm uppercase">CALCIUM WIRE DRAWING POWDER</div>
+                        <h3 class="text-sm font-bold text-primary mt-1">Virgin Calcium Soap Granules (D-45 / P-75 / PKL)</h3>
+                        <p class="text-xs text-on-surface-variant mt-1">Direct manufacturing in Ghaziabad for continuous low carbon, MS, and nail wire drawing.</p>
                     </div>
                 </div>
-                <div class="bg-surface rounded border border-outline-variant overflow-hidden shadow-sm">
-                    <div class="h-60 overflow-hidden bg-surface-container-highest">
-                        <img src="images/PACKED BAGS.jpg" alt="50 KG Packed Bags ready for dispatch" class="w-full h-full object-cover">
+
+                <!-- Photo 2: 50 KG Packed Bags Ready for Dispatch -->
+                <div class="bg-surface rounded border border-outline-variant overflow-hidden shadow-sm group">
+                    <div class="h-60 overflow-hidden bg-surface-container-highest relative">
+                        <img src="images/PACKED BAGS.jpg" alt="50 KG Packed Bags of Wire Drawing Powder ready for dispatch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-2 left-2 bg-black/75 backdrop-blur-sm text-white px-2.5 py-1 rounded text-[11px] font-label-sm font-semibold">
+                            Dispatch Warehouse &bull; 50 KG Bags
+                        </div>
                     </div>
-                    <div class="p-3.5">
-                        <div class="text-xs font-label-sm font-bold text-secondary">FACTORY DISPATCH WAREHOUSE</div>
-                        <h3 class="text-sm font-bold text-primary">50 KG Moisture-Barrier HDPE Bags with Inner Liners</h3>
+                    <div class="p-4 bg-surface-container-lowest">
+                        <div class="text-xs font-bold text-secondary font-label-sm uppercase">FACTORY DISPATCH WAREHOUSE</div>
+                        <h3 class="text-sm font-bold text-primary mt-1">50 KG Moisture-Barrier HDPE Bags with Inner Liners</h3>
+                        <p class="text-xs text-on-surface-variant mt-1">Palletized &amp; ready for immediate Pan-India and export dispatch from Ghaziabad.</p>
                     </div>
                 </div>
             </div>
