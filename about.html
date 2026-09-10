@@ -119,8 +119,60 @@
         </a>
         <nav class="hidden lg:flex items-center gap-4 xl:gap-7">
             <a class="text-xs xl:text-sm font-semibold uppercase tracking-wider text-secondary hover:text-primary whitespace-nowrap transition-colors" href="index.html#home">Home</a>
-            <a class="text-xs xl:text-sm font-semibold uppercase tracking-wider text-primary hover:text-secondary whitespace-nowrap transition-colors" href="about.html">About Us</a>
-            <a class="text-xs xl:text-sm font-semibold uppercase tracking-wider text-secondary hover:text-primary whitespace-nowrap transition-colors" href="products.html">Products</a>
+            <a class="text-xs xl:text-sm font-semibold uppercase tracking-wider text-primary font-bold whitespace-nowrap transition-colors" href="about.html">About Us</a>
+            
+            <!-- Products with 4-way Wire Mega-Menu -->
+            <div class="relative group py-6">
+                <a class="text-xs xl:text-sm font-semibold uppercase tracking-wider text-secondary group-hover:text-primary whitespace-nowrap transition-colors inline-flex items-center gap-1" href="products.html">
+                    <span>Products</span>
+                    <span class="material-symbols-outlined text-base group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+                </a>
+                
+                <!-- Mega Dropdown: 4 Side-by-Side Wire Options -->
+                <div class="absolute left-1/2 -translate-x-1/2 top-full w-[840px] bg-surface rounded-xl border-2 border-outline-variant shadow-2xl p-5 hidden group-hover:block z-50">
+                    <div class="flex items-center justify-between pb-3 mb-4 border-b border-outline-variant">
+                        <div>
+                            <span class="text-[10px] font-label-sm font-bold text-blue-700 uppercase tracking-wider">Select By Wire Type</span>
+                            <div class="text-sm font-bold text-primary">Which Type of Wire Do You Draw?</div>
+                        </div>
+                        <a href="products.html" class="text-xs font-bold text-blue-700 hover:underline inline-flex items-center gap-1 font-label-sm">
+                            <span>Open Full Products Catalog</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-4 gap-3 text-left">
+                        <!-- Option 1: Low Carbon -->
+                        <a href="products.html#cat-low-carbon" class="p-3.5 rounded-lg border border-blue-200 hover:border-blue-600 bg-white hover:bg-blue-50/50 hover:shadow-md transition-all block group/card">
+                            <span class="text-[10px] font-bold text-blue-700 font-label-sm uppercase">Option 01</span>
+                            <div class="text-sm font-bold text-primary group-hover/card:text-blue-700 mt-1">Low Carbon Wire</div>
+                            <div class="text-xs text-on-surface-variant mt-1">MS, Binding, Nail &amp; GI Wire</div>
+                            <div class="text-[11px] text-blue-800 font-semibold mt-2">D-45 &bull; P-75 &bull; PKL</div>
+                        </a>
+                        <!-- Option 2: High Carbon -->
+                        <a href="products.html#cat-high-carbon" class="p-3.5 rounded-lg border border-purple-200 hover:border-purple-600 bg-white hover:bg-purple-50/50 hover:shadow-md transition-all block group/card">
+                            <span class="text-[10px] font-bold text-purple-700 font-label-sm uppercase">Option 02</span>
+                            <div class="text-sm font-bold text-primary group-hover/card:text-purple-700 mt-1">High Carbon Wire</div>
+                            <div class="text-xs text-on-surface-variant mt-1">Spring Steel &amp; Tyre Bead</div>
+                            <div class="text-[11px] text-purple-800 font-semibold mt-2">HC-1000 &bull; S-90</div>
+                        </a>
+                        <!-- Option 3: Stainless Steel -->
+                        <a href="products.html#cat-stainless" class="p-3.5 rounded-lg border border-sky-200 hover:border-sky-600 bg-white hover:bg-sky-50/50 hover:shadow-md transition-all block group/card">
+                            <span class="text-[10px] font-bold text-sky-700 font-label-sm uppercase">Option 03</span>
+                            <div class="text-sm font-bold text-primary group-hover/card:text-sky-700 mt-1">Stainless Steel Wire</div>
+                            <div class="text-xs text-on-surface-variant mt-1">SS 304, SS 316, SS 202</div>
+                            <div class="text-[11px] text-sky-800 font-semibold mt-2">SS-1000 &bull; Wet Compounds</div>
+                        </a>
+                        <!-- Option 4: Copper Wire -->
+                        <a href="products.html#cat-copper" class="p-3.5 rounded-lg border border-orange-200 hover:border-orange-600 bg-white hover:bg-orange-50/50 hover:shadow-md transition-all block group/card">
+                            <span class="text-[10px] font-bold text-orange-700 font-label-sm uppercase">Option 04</span>
+                            <div class="text-sm font-bold text-primary group-hover/card:text-orange-700 mt-1">Copper Wire</div>
+                            <div class="text-xs text-on-surface-variant mt-1">ETP Rod &amp; Fine Annealed Wire</div>
+                            <div class="text-[11px] text-orange-800 font-semibold mt-2">CU-56 Oil &bull; CL/1A</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <a class="text-xs xl:text-sm font-semibold uppercase tracking-wider text-secondary hover:text-primary whitespace-nowrap transition-colors" href="index.html#spec-matrix">Selection Matrix</a>
             <a class="text-xs xl:text-sm font-semibold uppercase tracking-wider text-secondary hover:text-primary whitespace-nowrap transition-colors" href="contact.html">Contact</a>
         </nav>
@@ -134,12 +186,54 @@
             <a href="contact.html" class="inline-flex items-center justify-center bg-[#F59E0B] text-[#0F172A] px-4 sm:px-5 py-2.5 text-xs uppercase font-bold hover:bg-[#e08e04] whitespace-nowrap transition-colors rounded shadow-sm">
                 Request Quote
             </a>
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" class="lg:hidden p-2 text-primary hover:text-secondary focus:outline-none" aria-label="Open navigation menu">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
         </div>
+    </div>
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-surface border-t border-outline-variant px-4 py-4 space-y-3">
+        <a href="index.html#home" class="block text-sm font-semibold uppercase tracking-wider text-secondary py-1">Home</a>
+        <a href="about.html" class="block text-sm font-semibold uppercase tracking-wider text-primary py-1">About Us</a>
+        
+        <!-- Mobile 4-way Wire Options -->
+        <div class="py-2 border-y border-outline-variant/60 my-2">
+            <a href="products.html" class="text-xs font-bold uppercase tracking-wider text-primary flex items-center justify-between font-label-sm mb-2">
+                <span>Products &bull; Which Type of Wire?</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+            <div class="grid grid-cols-2 gap-2">
+                <a href="products.html#cat-low-carbon" class="p-2.5 bg-surface-container-low rounded border border-blue-200 block">
+                    <span class="text-[10px] font-bold text-blue-700 uppercase font-label-sm block">Option 1</span>
+                    <span class="text-xs font-bold text-primary block mt-0.5">Low Carbon</span>
+                    <span class="text-[10px] text-on-surface-variant block">MS &bull; Binding</span>
+                </a>
+                <a href="products.html#cat-high-carbon" class="p-2.5 bg-surface-container-low rounded border border-purple-200 block">
+                    <span class="text-[10px] font-bold text-purple-700 uppercase font-label-sm block">Option 2</span>
+                    <span class="text-xs font-bold text-primary block mt-0.5">High Carbon</span>
+                    <span class="text-[10px] text-on-surface-variant block">Spring &bull; Rope</span>
+                </a>
+                <a href="products.html#cat-stainless" class="p-2.5 bg-surface-container-low rounded border border-sky-200 block">
+                    <span class="text-[10px] font-bold text-sky-700 uppercase font-label-sm block">Option 3</span>
+                    <span class="text-xs font-bold text-primary block mt-0.5">Stainless</span>
+                    <span class="text-[10px] text-on-surface-variant block">SS 304 &bull; 316</span>
+                </a>
+                <a href="products.html#cat-copper" class="p-2.5 bg-surface-container-low rounded border border-orange-200 block">
+                    <span class="text-[10px] font-bold text-orange-700 uppercase font-label-sm block">Option 4</span>
+                    <span class="text-xs font-bold text-primary block mt-0.5">Copper Wire</span>
+                    <span class="text-[10px] text-on-surface-variant block">ETP Rod &bull; Fine</span>
+                </a>
+            </div>
+        </div>
+
+        <a href="index.html#spec-matrix" class="block text-sm font-semibold uppercase tracking-wider text-secondary py-1">Selection Matrix</a>
+        <a href="contact.html" class="block text-sm font-semibold uppercase tracking-wider text-secondary py-1">Contact</a>
     </div>
 </header>
 
 <main>
-    <!-- Top Showcase Header with Bags and Landing Photo at the Start -->
+    <!-- Top Showcase Header with Bags and Calcium Powder Photo at the Start -->
     <section class="py-12 bg-surface-container-low border-b border-outline-variant">
         <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop">
             <div class="text-xs font-label-sm font-bold text-secondary uppercase tracking-widest mb-2">Company Profile &bull; Est. 30+ Years</div>
@@ -148,24 +242,32 @@
                 For over 30 years, Shri Ram Chemicals, based in Ghaziabad, India, has been a trusted name in the wire drawing industry.
             </p>
 
-            <!-- BAGS AND LANDING PAGE PHOTO AT THE START -->
+            <!-- BAGS AND CALCIUM POWDER PHOTO AT THE START -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-surface rounded border border-outline-variant overflow-hidden shadow-sm">
-                    <div class="h-64 overflow-hidden bg-surface-container-highest">
-                        <img src="images/LANDING 1.jpg" alt="Manufacturing Facility in Ghaziabad" class="w-full h-full object-cover">
+                <div class="bg-surface rounded border border-outline-variant overflow-hidden shadow-sm group">
+                    <div class="h-64 overflow-hidden bg-surface-container-highest relative">
+                        <img src="images/D-45.jpg" alt="Calcium Wire Drawing Powder Manufactured in Ghaziabad" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-2 left-2 bg-black/75 backdrop-blur-sm text-white px-2.5 py-1 rounded text-[11px] font-label-sm font-semibold">
+                            Calcium Drawing Powder &bull; Grade D-45
+                        </div>
                     </div>
                     <div class="p-4">
-                        <div class="text-xs font-label-sm font-bold text-secondary">MANUFACTURING FACILITY</div>
-                        <h3 class="text-sm font-bold text-primary">Ghaziabad, Uttar Pradesh, India</h3>
+                        <div class="text-xs font-label-sm font-bold text-secondary uppercase">CALCIUM WIRE DRAWING POWDER</div>
+                        <h3 class="text-sm font-bold text-primary mt-1">Virgin Calcium Soap Granules (D-45 / P-75 / PKL)</h3>
+                        <p class="text-xs text-on-surface-variant mt-1">Direct manufacturing in Ghaziabad for MS, binding, and nail wire drawing.</p>
                     </div>
                 </div>
-                <div class="bg-surface rounded border border-outline-variant overflow-hidden shadow-sm">
-                    <div class="h-64 overflow-hidden bg-surface-container-highest">
-                        <img src="images/PACKED BAGS.jpg" alt="50 KG Packed Bags ready for dispatch" class="w-full h-full object-cover">
+                <div class="bg-surface rounded border border-outline-variant overflow-hidden shadow-sm group">
+                    <div class="h-64 overflow-hidden bg-surface-container-highest relative">
+                        <img src="images/PACKED BAGS.jpg" alt="50 KG Packed Bags ready for dispatch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-2 left-2 bg-black/75 backdrop-blur-sm text-white px-2.5 py-1 rounded text-[11px] font-label-sm font-semibold">
+                            Dispatch Warehouse &bull; 50 KG Bags
+                        </div>
                     </div>
                     <div class="p-4">
-                        <div class="text-xs font-label-sm font-bold text-secondary">FINISHED WAREHOUSE</div>
-                        <h3 class="text-sm font-bold text-primary">50 KG Moisture-Resistant Packed Bags Ready for Dispatch</h3>
+                        <div class="text-xs font-label-sm font-bold text-secondary uppercase">FINISHED WAREHOUSE</div>
+                        <h3 class="text-sm font-bold text-primary mt-1">50 KG Moisture-Resistant Packed Bags Ready for Dispatch</h3>
+                        <p class="text-xs text-on-surface-variant mt-1">Palletized &amp; ready for immediate Pan-India and export dispatch from Ghaziabad.</p>
                     </div>
                 </div>
             </div>
@@ -265,5 +367,15 @@
         <p>Direct Factory Supply &bull; 50 KG HDPE Bags &bull; 200 KG Drums</p>
     </div>
 </footer>
+<!-- Mobile menu toggle -->
+<script>
+var mobileToggle = document.getElementById('mobile-menu-toggle');
+var mobileNav = document.getElementById('mobile-menu');
+if (mobileToggle && mobileNav) {
+    mobileToggle.addEventListener('click', function() {
+        mobileNav.classList.toggle('hidden');
+    });
+}
+</script>
 </body>
 </html>
