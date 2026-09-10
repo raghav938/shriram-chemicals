@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -109,13 +109,13 @@
     </style>
 </head>
 
-<body class="bg-background text-on-background antialiased font-body-md pt-20">
+<body class="bg-background text-on-background antialiased font-body-md pt-20 pb-16 lg:pb-0 overflow-x-hidden">
 <!-- Top Navigation Bar -->
 <header class="bg-surface/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant">
-    <div class="flex justify-between items-center px-4 sm:px-6 lg:px-8 h-20 max-w-container-max mx-auto">
-        <a href="index.html" class="flex flex-col shrink-0 mr-4">
-            <span class="text-xl sm:text-2xl font-bold tracking-tight text-primary whitespace-nowrap">SHRI RAM CHEMICALS</span>
-            <span class="text-[10px] sm:text-xs tracking-widest text-secondary font-label-sm font-bold uppercase whitespace-nowrap">Wire Drawing Lubricants &bull; Est. 30+ Yrs</span>
+    <div class="flex justify-between items-center px-3 sm:px-6 lg:px-8 h-20 max-w-container-max mx-auto">
+        <a href="index.html" class="flex flex-col shrink-0 mr-2 sm:mr-4">
+            <span class="text-base sm:text-2xl font-bold tracking-tight text-primary whitespace-nowrap">SHRI RAM CHEMICALS</span>
+            <span class="text-[9px] sm:text-xs tracking-wider text-secondary font-label-sm font-bold uppercase whitespace-nowrap">Wire Drawing Lubricants &bull; Est. 30+ Yrs</span>
         </a>
         <nav class="hidden lg:flex items-center gap-4 xl:gap-7">
             <a class="text-xs xl:text-sm font-semibold uppercase tracking-wider text-secondary hover:text-primary whitespace-nowrap transition-colors" href="index.html#home">Home</a>
@@ -183,11 +183,11 @@
                 <span class="material-symbols-outlined text-base leading-none">chat</span>
                 <span class="whitespace-nowrap">+91 9999818908</span>
             </a>
-            <a href="contact.html" class="inline-flex items-center justify-center bg-[#F59E0B] text-[#0F172A] px-4 sm:px-5 py-2.5 text-xs uppercase font-bold hover:bg-[#e08e04] whitespace-nowrap transition-colors rounded shadow-sm">
+            <a href="contact.html" class="inline-flex items-center justify-center bg-[#F59E0B] text-[#0F172A] px-2.5 sm:px-5 py-2 sm:py-2.5 text-[11px] sm:text-xs uppercase font-bold hover:bg-[#e08e04] whitespace-nowrap transition-colors rounded shadow-sm">
                 Request Quote
             </a>
             <!-- Mobile Menu Toggle Button -->
-            <button id="mobile-menu-toggle" class="lg:hidden p-2 text-primary hover:text-secondary focus:outline-none" aria-label="Open navigation menu">
+            <button id="mobile-menu-toggle" class="lg:hidden p-1.5 sm:p-2 text-primary hover:text-secondary focus:outline-none" aria-label="Open navigation menu">
                 <span class="material-symbols-outlined text-2xl">menu</span>
             </button>
         </div>
@@ -367,7 +367,7 @@
         <p>Direct Factory Supply &bull; 50 KG HDPE Bags &bull; 200 KG Drums</p>
     </div>
 </footer>
-<!-- Mobile menu toggle -->
+<!-- Mobile menu toggle & auto-close on link tap -->
 <script>
 var mobileToggle = document.getElementById('mobile-menu-toggle');
 var mobileNav = document.getElementById('mobile-menu');
@@ -375,7 +375,30 @@ if (mobileToggle && mobileNav) {
     mobileToggle.addEventListener('click', function() {
         mobileNav.classList.toggle('hidden');
     });
+    // Auto-close menu when tapping any link
+    var mobileLinks = mobileNav.querySelectorAll('a');
+    mobileLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            mobileNav.classList.add('hidden');
+        });
+    });
 }
 </script>
+
+<!-- Mobile Floating Action Bar (Only on mobile screens, hidden on desktop) -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md border-t border-outline-variant px-3 py-2 flex items-center justify-between gap-2 lg:hidden shadow-lg">
+    <a href="products.html" class="flex-1 bg-surface-container hover:bg-surface-container-high text-primary border border-outline-variant py-2 px-2 rounded text-center text-xs font-bold uppercase tracking-wider font-label-sm flex items-center justify-center gap-1 shadow-sm">
+        <span class="material-symbols-outlined text-base">category</span>
+        <span>Products</span>
+    </a>
+    <a href="https://wa.me/919999818908?text=Hello%20Shri%20Ram%20Chemicals,%20I%20would%20like%20to%20inquire%20about%20wire%20drawing%20lubricants." target="_blank" class="flex-1 bg-[#25D366] hover:bg-[#20bd5a] text-white py-2 px-2 rounded text-center text-xs font-bold uppercase tracking-wider font-label-sm flex items-center justify-center gap-1 shadow-sm">
+        <span class="material-symbols-outlined text-base">chat</span>
+        <span>WhatsApp</span>
+    </a>
+    <a href="contact.html" class="flex-1 bg-[#F59E0B] hover:bg-[#e08e04] text-[#0F172A] py-2 px-2 rounded text-center text-xs font-bold uppercase tracking-wider font-label-sm flex items-center justify-center gap-1 shadow-sm">
+        <span class="material-symbols-outlined text-base">request_quote</span>
+        <span>Quote</span>
+    </a>
+</div>
 </body>
 </html>
